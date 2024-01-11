@@ -39,3 +39,25 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+skillimg=["aws.png","bootstrap.png","css.png","Django.png","docker.png","flask.png","gcp.png","git.png","github.png"
+          ,"html.png","java.png","JS.png"  ,"mongo.png","mysql.png","php.png","python.png","powerBI.png","Tableau.png"]
+function shuffle(a){
+  for(let i=a.length-1;i>0;i--)
+  {
+    const j =Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+}
+shuffle(skillimg)
+skillimg.forEach(skill => {
+  const div =document.createElement('div');
+  const img=document.createElement('img')
+  const span=document.createElement('span')
+  div.classList="skill"
+  img.src="/skills/"+skill;
+  img.classList="skillimg";
+  
+  div.appendChild(img);
+  document.getElementById('skill').appendChild(div)
+});

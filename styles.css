@@ -21,6 +21,10 @@
 }
 
 @media screen and (max-width: 720px) {
+  .skillimg{
+    height: 80px;
+    width:80px;
+  }
   .sub-li {
     display: none;
   }
@@ -41,7 +45,10 @@
   .col-sm-9 {
     position: relative;
   }
-
+  .skillimg{
+    height: 40px;
+    width:40px;
+  }
   .center {
     position: absolute;
     top: 50%;
@@ -314,4 +321,27 @@ h3{
 color: #00A36C;
 margin-left:40px;
 margin-bottom: 0px;
+}
+#skill{
+  padding:5px;
+  margin:40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.skillimg{
+  height: 100px;
+  width:100px;
+  position: relative;
+}
+.skill{
+  padding:10px;
+  margin:10px;
+  cursor: pointer;
+}
+.skill:hover{
+  transform: scale(1.1); 
+  transition: transform 2s;
 }
