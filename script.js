@@ -79,7 +79,7 @@ const projects=[
   {
     name:"Hotel Menu",
     imgs:["hm1","hm2","hm3"],    
-    desc:"Webpage to order Beverages, Snacks, Food.A Bill will be generated based on Customer Order",
+    desc:"Order from menu.A Bill will be generated based on Customer Order",
     skill:["html.png","css.png","JS.png","git.png","github.png"],
     link:"https://asprajna.github.io/FOOD/"
   },
@@ -100,7 +100,7 @@ const projects=[
   {
     name:"Netflix",
     imgs:["nf1","nf2","nf3"],    
-    desc:"Buided Dashboard on Netflix Data using Tableau.Various Visualization done on Different Factors",
+    desc:"Buided Dashboard on Netflix Data using Tableau.Visualized on Different Factors",
     skill:["Tableau.png"],
     link:"https://public.tableau.com/app/profile/a.s.prajna/viz/Netflix-final/NETFLIX?publish=yes"
   }
