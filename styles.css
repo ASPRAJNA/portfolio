@@ -1,11 +1,13 @@
 *{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif
+  font-family:'Brawler';
 }
 .nav-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-size: 25px;
   overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .nav-li {
@@ -14,7 +16,8 @@
 
 .nav-li a {
   display: block;
-  font-size: 19px;
+
+  font-size: 25px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -312,6 +315,7 @@ textarea{
 }
 h3{
   margin:40px;
+  font-family: 'Bree Serif';
 }
 .workcard{
   display: flex;
@@ -409,4 +413,9 @@ margin-bottom: 0px;
   font-size: 25px;
   color: #fff;
   text-align: center;
+  
+  font-family: 'Bree Serif';
+}
+*{
+  font-weight: 500;
 }
