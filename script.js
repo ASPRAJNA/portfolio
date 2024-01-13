@@ -53,7 +53,6 @@ shuffle(skillimg)
 skillimg.forEach(skill => {
   const div =document.createElement('div');
   const img=document.createElement('img')
-  const span=document.createElement('span')
   div.classList="skill"
   img.src="/skills/"+skill;
   img.classList="skillimg";
@@ -61,3 +60,105 @@ skillimg.forEach(skill => {
   div.appendChild(img);
   document.getElementById('skill').appendChild(div)
 });
+
+const projects=[
+  {
+    name:"Shield",
+    imgs:["sh1","sh2","sh3"],
+    desc:"A WebPage which is helpful to create awarness for people during the time of covid",
+    skill:["html.png","css.png","angular.png","JS.png","git.png","github.png"],
+    link:"https://asprajna.github.io/SHIELD/"
+  },
+  {
+    name:"Music Web",
+    imgs:["mu1","mu2","mu3"],    
+    desc:"A Simple WebPage for Music Lovers, To listen all kind of English Music easily",
+    skill:["html.png","css.png","JS.png","git.png","github.png"],
+    link:"https://asprajna.github.io/MUSIC/"
+  },
+  {
+    name:"Hotel Menu",
+    imgs:["hm1","hm2","hm3"],    
+    desc:"Webpage to order Beverages, Snacks, Food.A Bill will be generated based on Customer Order",
+    skill:["html.png","css.png","JS.png","git.png","github.png"],
+    link:"https://asprajna.github.io/FOOD/"
+  },
+  {
+    name:"Exam Web",
+    imgs:["ex1","ex2","ex3"],    
+    desc:"A Complete Front-end, Back-end WebPage to take Quiz tests for Students",
+    skill:["html.png","css.png","JS.png","git.png","mysql.png","php.png","xammp.png"],
+    link:"https://asprajna.github.io/exam/"
+  },
+  {
+    name:"Weather App",
+    imgs:["wt1","wt2","wt3"],    
+    desc:"App that gives the information of Weather of diffrent location through API. Hosted in S3",
+    skill:["html.png","css.png","JS.png","aws.png"],
+    link:"https://my1weatherapp.s3.amazonaws.com/index.html"
+  },
+  {
+    name:"Netflix",
+    imgs:["nf1","nf2","nf3"],    
+    desc:"Buided Dashboard on Netflix Data using Tableau.Various Visualization done on Different Factors",
+    skill:["Tableau.png"],
+    link:"https://public.tableau.com/app/profile/a.s.prajna/viz/Netflix-final/NETFLIX?publish=yes"
+  }
+]
+projects.forEach(pro=>{
+  const div=document.createElement('div');
+  div.classList="prolist";
+  const img=document.createElement('img');
+  img.src="/projectimages/"+pro.imgs[0]+".png";
+  console.log(img.src);
+  img.classList="proimg";
+  const h4=document.createElement('h4');
+  h4.innerHTML=pro.name;
+  h4.classList='protitle'
+  const a =document.createElement('a');
+  a.href=pro.link;
+
+  const p=document.createElement('p');
+  p.innerHTML=pro.desc;
+  p.classList='proexplain';
+  const divimg=document.createElement('div')
+  pro.skill.forEach(skill=>{
+    const img=document.createElement('img') 
+    img.src="/skills/"+skill;
+    img.classList="proskill"
+    divimg.appendChild(img);
+  })
+  
+  const hr=document.createElement('hr');
+  hr.classList='hr';
+  const i=document.createElement('i');
+  i.classList="fa fa-paper-plane";
+  const btn=document.createElement('button')
+  btn.innerHTML="Visit";
+  btn.classList="prolink";
+  a.append(btn)
+  btn.append(i);
+  div.appendChild(img)
+  div.appendChild(h4);
+  div.appendChild(p);
+  div.appendChild(divimg);
+  div.appendChild(hr);
+  div.appendChild(a)
+  document.getElementById('pro').appendChild(div)
+})
+const pro=[
+      ["sh1","sh2","sh3"],
+      ["mu1","mu2","mu3"],
+      ["hm1","hm2","hm3"],  
+      ["ex1","ex2","ex3"],
+      ["wt1","wt2","wt3"],
+      ["nf1","nf2","nf3"]
+]
+let current=[0];
+const imgchange=document.getElementsByClassName('proimg');
+function changeimg(){
+  for(let i=0;i<imgchange.length;i++)
+  imgchange[i].src="/projectimages/"+pro[i][current]+".png";
+  current=(current+1)%3;
+}
+setInterval(changeimg,6000);
