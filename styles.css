@@ -154,7 +154,9 @@
   cursor: pointer;
   justify-content: space-between;
 }
-
+#resume{
+  font-size: 23px;
+}
 #resume:hover , .prolink:hover{
   color: #00A36C;
   border: 2px solid #00A36C;
@@ -314,6 +316,7 @@ textarea{
 
 }
 h3{
+  font-size: 35px;
   margin:40px;
   font-family: 'Bree Serif';
 }
