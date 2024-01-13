@@ -90,9 +90,9 @@
 
 #profilepic {
 
-  width: 300px;
+  width: 380px;
   float: right;
-  height: 300px;
+  height: 380px;
 }
 
 .container p span.typed-text {
@@ -209,7 +209,6 @@ p{
 }
 
 #about{
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
   margin:20px;
   border-radius: 5px;
