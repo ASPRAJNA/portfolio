@@ -162,3 +162,36 @@ function changeimg(){
   current=(current+1)%3;
 }
 setInterval(changeimg,6000);
+
+
+const repos=[
+  {
+    title:'UI-UX designs',
+    link:'https://github.com/ASPRAJNA/UIUX-design.git'
+  },
+  {
+    title:'Number System',
+    link:'https://github.com/ASPRAJNA/Converter-of-Number-system'
+  }
+];
+repos.forEach(repo=>{
+const a=document.createElement('a');
+a.classList='ag-courses-item_link';
+const div2=document.createElement('div');
+div2.classList='ag-courses-item_bg';
+const div3=document.createElement('div');
+div3.classList='ag-courses-item_title';
+div3.innerHTML=repo.title;
+
+const div4=document.createElement('div');
+div4.classList='ag-courses-item_date-box';
+
+const h6=document.createElement('h6');
+h6.classList='ag-courses-item_date';
+  h6.innerHTML=repo.link;
+  a.appendChild(div2);
+  a.appendChild(div3);
+  div4.appendChild(h6);
+  a.appendChild(div4);
+  document.getElementById('ag-courses_item').appendChild(a);
+});
