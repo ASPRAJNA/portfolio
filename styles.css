@@ -359,8 +359,8 @@ margin-bottom: 0px;
   position: relative;
 }
 .skill{
-  padding:20px;
-  margin:20px;
+  padding: 5px;
+  margin:10px;
   cursor: pointer;
 }
 .skill:hover{
