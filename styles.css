@@ -28,8 +28,10 @@
 
 @media screen and (max-width: 720px) {
   .skillimg{
-    height: 80px;
-    width:80px;
+    height: 20px;
+    width:20px;
+    margin:0px;
+    padding: 0px;
   }
   .sub-li {
     display: none;
@@ -52,8 +54,10 @@
     position: relative;
   }
   .skillimg{
-    height: 40px;
-    width:40px;
+    height: 10px;
+    width:10px;
+    margin:0px;
+    padding: 0px;
   }
   .center {
     position: absolute;
@@ -342,8 +346,8 @@ margin-bottom: 0px;
   justify-content: center;
 }
 .skillimg{
-  height: 100px;
-  width:100px;
+  height: 70px;
+  width:70px;
   position: relative;
 }
 .skill{
