@@ -54,7 +54,7 @@ skillimg.forEach(skill => {
   const div =document.createElement('div');
   const img=document.createElement('img')
   div.classList="skill"
-  img.src="/skills/"+skill;
+  img.src="skills/"+skill;
   img.classList="skillimg";
   
   div.appendChild(img);
@@ -109,7 +109,7 @@ projects.forEach(pro=>{
   const div=document.createElement('div');
   div.classList="prolist";
   const img=document.createElement('img');
-  img.src="/projectimages/"+pro.imgs[0]+".png";
+  img.src="projectimages/"+pro.imgs[0]+".png";
   console.log(img.src);
   img.classList="proimg";
   const h4=document.createElement('h4');
@@ -124,7 +124,7 @@ projects.forEach(pro=>{
   const divimg=document.createElement('div')
   pro.skill.forEach(skill=>{
     const img=document.createElement('img') 
-    img.src="/skills/"+skill;
+    img.src="skills/"+skill;
     img.classList="proskill"
     divimg.appendChild(img);
   })
@@ -158,7 +158,7 @@ let current=[0];
 const imgchange=document.getElementsByClassName('proimg');
 function changeimg(){
   for(let i=0;i<imgchange.length;i++)
-  imgchange[i].src="/projectimages/"+pro[i][current]+".png";
+  imgchange[i].src="projectimages/"+pro[i][current]+".png";
   current=(current+1)%3;
 }
 setInterval(changeimg,6000);
