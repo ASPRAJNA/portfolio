@@ -80,7 +80,7 @@ const projects=[
     name:"Hotel Menu",
     imgs:["hm1","hm2","hm3"],    
     desc:"Order from menu.A Bill will be generated based on Customer Order",
-    skill:["html.png","css.png","JS.png","git.png","github.png"],
+    skill:["html.png","css.png","JS.png","git.png","github.png","bootstrap.png"],
     link:"https://asprajna.github.io/FOOD/"
   },
   {
